@@ -8,7 +8,7 @@ namespace TinyTeenyRougelike
         {
             Dungeon dungeon = new Dungeon(Constants.DungeonWidth, Constants.DungeonHeight);
             string displayText = Constants.IntroductionText;
-            while (dungeon.IsGameActive) // or true to test. there aint no monsters to resolve this so it ends.
+            while (dungeon.IsGameActive) 
             {
                 dungeon.DrawToConsole();
                 Console.WriteLine(displayText);
