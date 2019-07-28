@@ -1,0 +1,11 @@
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\obj\Debug\netcoreapp2.1\TinyTeenyRougelike.csprojAssemblyReference.cache
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\obj\Debug\netcoreapp2.1\TinyTeenyRougelike.csproj.CoreCompileInputs.cache
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\obj\Debug\netcoreapp2.1\TinyTeenyRougelike.AssemblyInfoInputs.cache
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\obj\Debug\netcoreapp2.1\TinyTeenyRougelike.AssemblyInfo.cs
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\bin\Debug\netcoreapp2.1\TinyTeenyRougelike.deps.json
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\bin\Debug\netcoreapp2.1\TinyTeenyRougelike.runtimeconfig.json
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\bin\Debug\netcoreapp2.1\TinyTeenyRougelike.runtimeconfig.dev.json
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\bin\Debug\netcoreapp2.1\TinyTeenyRougelike.dll
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\bin\Debug\netcoreapp2.1\TinyTeenyRougelike.pdb
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\obj\Debug\netcoreapp2.1\TinyTeenyRougelike.dll
+E:\Unity Projects\ProgrammingExcersises\TinyTeenyRougelike\TinyTeenyRougelike\obj\Debug\netcoreapp2.1\TinyTeenyRougelike.pdb
