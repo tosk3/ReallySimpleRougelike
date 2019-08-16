@@ -6,12 +6,11 @@ namespace TinyTeenyRougelike
 {
     public static class Constants
     {
-        public static bool monsterTurn = false;
         public readonly static int DungeonHeight = 20;
         public readonly static int DungeonWidth = 20;
         public readonly static int NumberOfSwords = 5;
         public readonly static int MonsterDamage = 2;
-        public readonly static int NumberOfMonsters = 1;
+        public readonly static int NumberOfMonsters = 2;
         public readonly static int StartingHitPoints = 10;
         public readonly static string TileImage = ".";
         public readonly static string WallImage = "#";

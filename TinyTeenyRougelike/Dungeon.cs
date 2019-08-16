@@ -8,7 +8,7 @@ namespace TinyTeenyRougelike
 {
     class Dungeon
     {
-        Random r = new Random();
+        public static Random r = new Random();
         public Player player;
         List<Monster> monsters;
         List<Sword> swords;
@@ -44,11 +44,11 @@ namespace TinyTeenyRougelike
             swords = new List<Sword>();
             this.xMax = xMax;
             this.yMax = yMax;
-            Tiles = new Tile[xMax, yMax]
-                ;
-            for (int i = 0; i < xMax - 1 && i > 1; i++)
+            Tiles = new Tile[xMax, yMax];
+
+            for (int i = 1; i < xMax - 2; i++)
             {
-                for (int j = 0; j < yMax - 1 && j > 1; j++)
+                for (int j = 1; j < yMax - 2; j++)
                 {
                     Point point = new Point(i, j);
                     availablePoints.Add(point);
@@ -86,13 +86,13 @@ namespace TinyTeenyRougelike
             }
             else
             {
-                if (!Constants.monsterTurn)
+                if (!m.monsterTurn)
                 {
-                    Constants.monsterTurn = true;
+                    m.monsterTurn = true;
                 }
                 else
                 {
-                    Constants.monsterTurn = false;
+                    m.monsterTurn = false;
                     if (Math.Abs(m.X - player.X) > Math.Abs(m.Y - player.Y))
                     {
                         if (m.X - player.X > 0)
@@ -139,18 +139,36 @@ namespace TinyTeenyRougelike
                 walls.Add(right);
             }
 
+            //spawns swords randomly
+
             for (int i = 0; i < Constants.NumberOfSwords; i++)
             {
-                Sword s = new Sword(GetValidRandomPoint());
-                swords.Add(s);
+                if (r.Next(1 + 1) == 1) // 50 : 50 chance of swords
+                {
+                    Sword s = new Sword(GetValidRandomPoint());
+                    swords.Add(s);
+                }
+                if (swords.Count <= 0) // incase none spawn
+                {
+                    Sword s = new Sword(GetValidRandomPoint());
+                    swords.Add(s);
+                }
+                
             }
+
+            // creates a new player in Random point
+
             player = new Player(GetValidRandomPoint());
+
+            //creates monsters based on the const value;
 
             for (int i = 0; i <Constants.NumberOfMonsters; i++)
             {
                 Monster m = new Monster(GetValidRandomPoint());
                 monsters.Add(m);
             }
+
+            //sets the dungeon
 
             SetAllDungeonSquaresToTiles();
         }

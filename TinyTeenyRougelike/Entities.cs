@@ -34,8 +34,18 @@ namespace TinyTeenyRougelike
 
     public class Monster : Creature
     {
+        public bool monsterTurn;
+
         public Monster(Point p)
         {
+            if (Dungeon.r.Next(1 + 1)==1){
+                monsterTurn = false;
+            }
+            else
+            {
+                monsterTurn = true;
+            }
+
             ImageCharacter = Constants.MonsterImage;
             Color = Constants.MonsterColor;
             X = p.X;

@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Toshk\\.nuget\\packages\\": {},
+    "C:\\Users\\Risk\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Unity Projects\\ProgrammingExcersises\\TinyTeenyRougelike\\TinyTeenyRougelike\\TinyTeenyRougelike.csproj",
+      "projectUniqueName": "C:\\Users\\Risk\\Documents\\Workspace\\ReallySimpleRougelike\\TinyTeenyRougelike\\TinyTeenyRougelike.csproj",
       "projectName": "TinyTeenyRougelike",
-      "projectPath": "E:\\Unity Projects\\ProgrammingExcersises\\TinyTeenyRougelike\\TinyTeenyRougelike\\TinyTeenyRougelike.csproj",
-      "packagesPath": "C:\\Users\\Toshk\\.nuget\\packages\\",
-      "outputPath": "E:\\Unity Projects\\ProgrammingExcersises\\TinyTeenyRougelike\\TinyTeenyRougelike\\obj\\",
+      "projectPath": "C:\\Users\\Risk\\Documents\\Workspace\\ReallySimpleRougelike\\TinyTeenyRougelike\\TinyTeenyRougelike.csproj",
+      "packagesPath": "C:\\Users\\Risk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Risk\\Documents\\Workspace\\ReallySimpleRougelike\\TinyTeenyRougelike\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Toshk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Risk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
