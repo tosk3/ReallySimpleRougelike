@@ -46,9 +46,9 @@ namespace TinyTeenyRougelike
             this.yMax = yMax;
             Tiles = new Tile[xMax, yMax];
 
-            for (int i = 1; i < xMax - 2; i++)
+            for (int i = 1; i < xMax-2; i++)
             {
-                for (int j = 1; j < yMax - 2; j++)
+                for (int j = 1; j < yMax-2; j++)
                 {
                     Point point = new Point(i, j);
                     availablePoints.Add(point);
@@ -80,7 +80,7 @@ namespace TinyTeenyRougelike
 
         private void MoveMonsterToPlayer(Monster m)
         {
-            if(m.X == player.X && m.Y == player.Y)
+            if (m.X == player.X && m.Y == player.Y)
             {
                 ResolveCombat(m);
             }
@@ -116,7 +116,7 @@ namespace TinyTeenyRougelike
                         }
                     }
                 }
-                
+
             }
         }
 
@@ -138,7 +138,6 @@ namespace TinyTeenyRougelike
                 Wall right = new Wall(xMax - 1, i);
                 walls.Add(right);
             }
-
             //spawns swords randomly
 
             for (int i = 0; i < Constants.NumberOfSwords; i++)
@@ -153,7 +152,7 @@ namespace TinyTeenyRougelike
                     Sword s = new Sword(GetValidRandomPoint());
                     swords.Add(s);
                 }
-                
+
             }
 
             // creates a new player in Random point
@@ -162,7 +161,7 @@ namespace TinyTeenyRougelike
 
             //creates monsters based on the const value;
 
-            for (int i = 0; i <Constants.NumberOfMonsters; i++)
+            for (int i = 0; i < Constants.NumberOfMonsters; i++)
             {
                 Monster m = new Monster(GetValidRandomPoint());
                 monsters.Add(m);
@@ -173,10 +172,11 @@ namespace TinyTeenyRougelike
             SetAllDungeonSquaresToTiles();
         }
 
-        private Point GetValidRandomPoint()
-        {
-            Point point = new Point(r.Next(1, 20), r.Next(1, 20));
-            availablePoints.Remove(point);
+        private Point GetValidRandomPoint() // takes a point from the list and returns it while also removing it from the list not allowing it to be used again.
+        { 
+            int rndIndex = r.Next(0, availablePoints.Count);
+            Point point = availablePoints[rndIndex];
+            availablePoints.RemoveAt(rndIndex);
             return point;
         }
 

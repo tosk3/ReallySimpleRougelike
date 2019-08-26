@@ -8,6 +8,7 @@ namespace TinyTeenyRougelike
         {
             Dungeon dungeon = new Dungeon(Constants.DungeonWidth, Constants.DungeonHeight);
             string displayText = Constants.IntroductionText;
+            string healthText;
             while (dungeon.IsGameActive) 
             {
                 dungeon.DrawToConsole();
